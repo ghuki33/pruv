@@ -1,0 +1,1213 @@
+:root{
+    --red:#CA1E1E;
+    --black:#090E0A;
+    --white:#BBE9C4;
+    --green:#00a120;
+    --yellow:#FFB900;
+    --blue: #003787;
+    --gray: #604141;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    overflow-x: hidden;
+    font-family: 'Russo One', sans-serif;
+    margin-bottom: 0px;
+}
+/**GRACIAS**/
+.gracias{
+    background: url(../img/asss.jpg);
+    position: center;
+    background-size: cover;
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.gracias h1{
+    color: ivory;
+    font-size: 80px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-top: 450px;
+    cursor: pointer;
+}
+.gracias h1:hover{
+    color: var(--yellow);
+    background-size: 50px;
+}
+.gracias > button{
+    background: var(--gray);
+    color: ivory;
+}
+.gracias > button a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+    list-style: none;
+}
+
+/**ARRIBA**/
+.subir{
+    position: fixed;
+    bottom: 100px;
+    right: -100%;
+    width: 50px;
+    height: 50px;
+    background: var(--black);
+    border: 5px solid var(--green);
+    border-radius: 40px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 400ms;
+    z-index: 9999;
+}
+.subir:hover{
+    height: 80px;
+    border: 2px solid var(--yellow);
+    background: var(--white);
+}
+.subir:hover span{
+    height: 122%;
+    font-size: 43px;
+    font-display: flex;
+    color: var(--yellow);
+    justify-content: center;
+    align-items: center;
+}
+.subir > span{
+    height: 122%;
+    font-size: 43px;
+    font-display: flex;
+    color: var(--green);
+    justify-content: center;
+    align-items: center;
+}
+/**SKEW**/
+.skew-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 8vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent ivory transparent;
+}
+.skew-arriba{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 8vh 100vw 0 0;
+    border-style: solid;
+    border-color: ivory transparent transparent transparent;
+}
+
+/**NAVEGAR**/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 20px;
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--black);
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+}
+.menu .list-container .lists li {
+    list-style: none;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menu .list-container .lists li a.activo{
+    background: var(--green);
+    color: #ffffff;
+}
+.menu .list-container .lists li a:hover{
+    background: var(--green);
+    color: #ffffff;
+}
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+/**IMAGEN HEADER**/
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/asss.jpg);
+    background-attachment: fixed;
+    position: center;
+    background-size: cover;
+}
+.img-header .bienvenido{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .bienvenido h1{
+    font-size: 50px;
+    color: ivory;
+    font-weight: 200;
+}
+.img-header .bienvenido hr{
+    width: 400px;
+    height: 2px;
+    background: ivory;
+    margin-top: 5px;
+}
+.img-header .bienvenido p{
+    font-size: 20px;
+    color: ivory;
+    margin-top: 20px;
+}
+.img-header .bienvenido > button{
+    width: 300px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    color: ivory;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-header .bienvenido > button:hover{
+    background: var(--yellow);
+}
+
+/**ACERCA DE ANDINOS**/
+.acerca-de{
+    width: 100%;
+    margin-top: 120px;
+}
+.acerca-de .info-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.acerca-de .info-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.acerca-de .info-container p{
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+    line-height: 35px;
+    margin: 10px 0px;
+}
+.acerca-de .info-container .about-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.acerca-de .info-container .about-gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    margin: 10px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.acerca-de .info-container .about-more{
+    width: calc(100%);
+    display: flex;
+    justify-content: center;
+}
+/**NORMATIVAS**/ /**INICIO**/
+.inf-normativas{
+    width: calc(100%);
+    display: flex;
+    justify-content: center;
+}
+.inf-normativas .gen button {
+    width: 270px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    color: ivory;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.inf-normativas .dpa button {
+    width: 270px;
+    height: 40px;
+    background: var(--blue);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    color: ivory;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.inf-normativas .ips button {
+    width: 270px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    color: ivory;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.inf-normativas .sda button {
+    width: 270px;
+    height: 40px;
+    background: var(--gray);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    color: ivory;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/**NORMATIVAS**/ /**FINAL**/
+.inf-normativas button:hover{
+    background: var(--yellow);
+}
+
+/**GALERIA**/
+.our-projects{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background: url(../img/dark-winter-lake-sunlight-4k-d5.jpg);
+   background-position: center;
+   background-size: cover; 
+   margin-top: 100px;
+}
+.our-projects .deg-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.our-projects .ejeZproject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.our-projects .container-project{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+.our-projects .container-project .project-title{
+    border: 2px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.our-projects .container-project .project-title h2{
+    font-size: 40px;
+    color: var(--green);
+    font-weight: normal;
+}
+.our-projects .container-project .project-title hr{
+    background: ivory;
+    width: 50%;
+    margin: 10px auto;
+}
+.our-projects .container-project .project-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px; 
+}
+.our-projects .container-project .project-img img{
+    width: calc(30% - 10px);
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/**OPINIONES**/
+.opiniones{
+    width: 100%;
+    margin-top: 120px;
+}
+.opiniones .opiniones-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.opiniones .opiniones-title h2{
+    font-size: 50px;
+    color: var(--green);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.opiniones .opiniones-title hr{
+    width: 60%;
+    margin: auto;
+    height: 3px;
+    background: var(--black);
+    border: none;
+}
+.opiniones .box-opiniones{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.opiniones .box-opiniones .card-opinion{
+    width: 45%;
+    margin: 20px;
+}
+.opiniones .box-opiniones .card-opinion .card-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.opiniones .box-opiniones .card-opinion .card-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.opiniones .box-opiniones .card-opinion .opinion-text{
+    width: 100%;
+    border: 3px solid var(--green);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 200ms;
+}
+.opiniones .box-opiniones .card-opinion .opinion-text h4{
+    color: var(--green);
+    font-weight: normal;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 200ms;
+}
+.opiniones .box-opiniones .card-opinion .opinion-text p{
+    font-size: 19px;
+    color: var(--black);
+    text-align: center;
+    line-height: 35px;
+    transition: 200ms;
+}
+.opiniones .box-opiniones .card-opinion .opinion-text:hover{
+    border: 2px solid var(--yellow);
+}
+.opiniones .box-opiniones .card-opinion .opinion-text:hover h4{
+    color: var(--yellow);
+}
+
+/**FOOTER**/
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/asss.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+.footer .deg-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-content{
+    width: 90%;
+    padding-top: 100px;
+    margin: auto;
+}
+.footer .footer-content .footer-title{
+    width: 50%;
+    margin: auto;
+    border: 2px solid var(--white);
+    padding: 15px;
+}
+.footer .footer-content .footer-title h2{
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    color: ivory;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.footer .footer-content .footer-title hr{
+    width: 80%;
+    margin: auto;
+}
+.footer .footer-content .formulario-content{
+    width: 60%;
+    background: ivory;
+    border-radius: 20px;
+    border: 2px solid var(--white);
+    margin: 50px auto;
+    padding: 30px;
+    margin-bottom: 150px;
+}
+.footer .footer-content .formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .footer-content .formulario-content #formulario label{
+    text-align: center;
+    color: var(--black);
+    font-size: 22px;
+    margin: 30px 0px 10px 0px;
+}
+.footer .footer-content .formulario-content #formulario input{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    border: 2px solid var(--green);
+    border-radius: 24px;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+}
+.footer .footer-content .formulario-content #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border: 2px solid var(--green);
+    border-radius: 24px;
+    outline: none;
+    font-size: 15px;
+    color: var(--black);
+    padding: 20px;
+}
+.footer .footer-content .formulario-content #formulario .send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+.footer .footer-content .formulario-content #formulario .send button{
+    width: 150px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+    color: ivory;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .footer-content .formulario-content #formulario .send button a{
+    background: none;
+    color: ivory;
+    text-decoration: none;
+}
+.footer .footer-content .formulario-content #formulario .send button a:hover{
+    color: var(--white);
+}
+.footer .footer-content .formulario-content #formulario .send button:hover{
+    background: var(--yellow);
+}
+.footer .footer-content .formulario-content #formulario .mensaje-form{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: var(--red);
+    font: normal;
+    font-size: 20px;
+    color: ivory;
+    border: 2px solid var(--red);
+    border-radius: 24px;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.footer .footer-content .formulario-content #formulario .mensaje-form:hover{
+    background: var(--yellow);
+    color: var(--black);
+    border: 2px solid var(--yellow);
+}
+.footer .footer-content .foorter-text{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.8);
+    border-top: 5px solid ivory;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer-content .foorter-text p{
+    color: ivory;
+    font-size: 20px;
+}
+
+/**NORMATIVAS**/
+    /**NORMATIVA GENERAL**/
+.generales{
+    text-align: left;
+    margin: 300px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    background: url(../img/asss.jpg);
+    contain: strict;
+    transition: 0.5s;
+    border-radius: 12px;
+}
+.generales .ejeZgenerales{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.generales .containergen{
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.generales .containergen .title h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.generales .containergen .title h2:hover{
+    color: red;
+}
+.generales .containergen .title hr{
+    width: 100%;
+    height: 100%;   
+}
+.generales .containergen .subtitle{
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--green);
+    text-align: left;
+    margin: 3px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.generales .containergen .subtitle h3{
+    color: var(--yellow);
+}
+.generales .containergen .subtitle h4{
+    color: var(--green);
+}
+.generales .containergen .subtitle h5{
+    color: var(--yellow);
+}
+.generales .containergen .subtitle h6{
+    color: var(--green);
+    font-size: 25px;
+}
+.generales .containergen .subtitle h7{
+    color: var(--yellow);
+}
+.generales .containergen .subtitle h8{
+    color: var(--green);
+}
+.generales .containergen .subtitle h9{
+    color: var(--yellow);
+}
+.generales .containergen .subtitle hr{
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    padding: 0;
+}
+.generales .containergen .contenido{
+    margin: 7px;
+    padding: 3px;
+}
+.generales .containergen .contenido p{
+    padding: 5px;
+}
+.generales .containergen .contenido hr{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    padding: 0;
+}
+.generales .containergen .pie-normativa{
+    position: relative;
+    border: var(--red);
+    background: var(--red);
+    padding: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+.generales .containergen .pie-normativa h3{
+    color: ivory;
+    font-size: 20px;
+}
+.generales .containergen .pie-normativa:hover{
+    border: var(--green);
+    background: var(--green);
+}
+
+/**DPA**/
+.ndpa{
+    text-align: left;
+    margin: 300px;
+    margin-top: -15px;
+    margin-bottom: 50px;
+    background: url(../img/asss.jpg);
+    contain: strict;
+    transition: 0.5s;
+    border-radius: 12px;
+}
+.ndpa .ejeZdpa{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.ndpa .containerdpa{
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ndpa .containerdpa .title h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(98, 126, 248);
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.ndpa .containerdpa .title h2:hover{
+    color: var(--green);
+}
+.ndpa .containerdpa .title hr{
+    width: 100%;
+    height: 100%;   
+}
+.ndpa .containerdpa .subtitle{
+    font-size: 26px;
+    font-weight: 400;
+    color: rgb(98, 126, 248);
+    text-align: left;
+    margin: 3px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.ndpa .containerdpa .subtitle h3{
+    color: rgb(98, 126, 248);
+}
+.ndpa .containerdpa .subtitle hr{
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    padding: 0;
+}
+.ndpa .containerdpa .contenido{
+    margin: 7px;
+    padding: 3px;
+    color: var(--white);
+}
+.ndpa .containerdpa .contenido h5{
+    color: green;
+    font-size: 23px;
+}
+.ndpa .containerdpa .contenido h6{
+    color: orangered;
+    font-size: 23px;
+}
+.ndpa .containerdpa .contenido h7{
+    color: red;
+    font-size: 23px;
+}
+.ndpa .containerdpa .contenido p{
+    padding: 5px;
+}
+.ndpa .containerdpa .contenido hr{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    padding: 0;
+}
+
+/**IPS**/
+.nips{
+    text-align: left;
+    margin: 300px;
+    margin-top: -60px;
+    margin-bottom: 50px;
+    background: url(../img/asss.jpg);
+    contain: strict;
+    transition: 0.5s;
+    border-radius: 12px;
+}
+.nips .ejeZips{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.nips .containerips{
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nips .containerips .title h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(255, 98, 98);;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.nips .containerips .title h1:hover{
+    color: var(--green);
+}
+.nips .containerips .title hr{
+    width: 100%;
+    height: 100%;   
+}
+.nips .containerips .subtitle{
+    font-size: 26px;
+    font-weight: 400;
+    color: rgb(255, 98, 98);
+    text-align: left;
+    margin: 3px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.nips .containerips .subtitle h2{
+    color: rgb(255, 98, 98);
+}
+.nips .containerips .subtitle hr{
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    padding: 0;
+}
+.nips .containerips .contenido{
+    margin: 7px;
+    padding: 3px;
+    color: var(--white);
+}
+.nips .containerips .contenido p{
+    padding: 5px;
+}
+.nips .containerips .contenido hr{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    padding: 0;
+}
+.nips .containerips .recomendaciones{
+    padding: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.nips .containerips .recomendaciones p{
+    font-size: 20px;
+    color: rgb(247, 248, 158);
+}
+
+/**SDA**/
+.nsda{
+    text-align: left;
+    margin: 300px;
+    margin-top: -2px;
+    margin-bottom: 50px;
+    background: url(../img/asss.jpg);
+    contain: strict;
+    transition: 0.5s;
+    border-radius: 12px;
+}
+.nsda .ejeZsda{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.nsda .containersda{
+    width: 100%;
+    height: 100%;
+    color: ivory;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nsda .containersda .title h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(123, 223, 248);;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.nsda .containersda .title h1:hover{
+    color: var(--green);
+}
+.nsda .containersda .title hr{
+    width: 100%;
+    height: 100%;   
+}
+.nsda .containersda .subtitle{
+    font-size: 26px;
+    font-weight: 400;
+    color: rgb(123, 223, 248);
+    text-align: left;
+    margin: 3px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.nsda .containersda .subtitle h2{
+    color: rgb(123, 223, 248);
+}
+.nsda .containersda .subtitle hr{
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    padding: 0;
+}
+.nsda .containersda .contenido{
+    margin: 7px;
+    padding: 3px;
+    color: ivory;
+}
+.nsda .containersda .contenido p{
+    padding: 5px;
+}
+.nsda .containersda .contenido hr{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    padding: 0;
+}
+.fijar{
+    margin-top: -135px;
+}
+
+/**NORMATIVAS**/
+/**MEDIA QUERY**/
+@media only screen and (max-width:900px){
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .btn-menu > .fa-bars:hover{
+        color: var(--green);
+    }
+    .btn-menu > .fa-times{
+        color: var(--green);
+    }
+    .menu .list-container{
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: ivory;
+    }
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 5px solid var(--green);
+    }
+    .menu .list-container .lists li{
+        width: 90%;
+        margin: 10px 0px;
+        border-bottom: 1px solid var(--green);
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+        font-size: 20px;
+    }
+    .menu .list-container .lists li a.activo{
+        background: none;
+        color: var(--green);
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: var(--green);
+    }
+}
+
+@media only screen and (max-width: 773px) {
+    /**IMAGENES HEADER**/
+    .img-header .bienvenido h1{
+        font-size: 40px;
+    }
+    .img-header .bienvenido > button{
+        width: 300px;
+        font-size: 20px;
+    }
+    .acerca-de .info-container h1{
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--black);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .acerca-de .info-container p{
+        text-align: center;
+        font-size: 13px;
+        color: var(--black);
+        line-height: 35px;
+        margin: 10px 0px;
+    }
+    /**GALERIA**/
+    .our-projects .container-project .project-title{
+        padding: 5px;
+    }
+    .our-projects .container-project .project-title h2{
+        font-size: 30px;
+        color: var(--green);
+        font-weight: normal;
+    }
+    .our-projects .container-project.project-img img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    /**NORMATIVAS**/ /**INICIO**/
+    .inf-normativas .gen button {
+    width: 200px;
+    height: 30px; 
+    font-size: 15px;
+    }
+    .inf-normativas .dpa button {
+    width: 150px;
+    height: 30px; 
+    font-size: 15px;
+    }
+    .inf-normativas .ips button {
+    width: 150px;
+    height: 30px; 
+    font-size: 15px;
+    }
+    .inf-normativas .sda button {
+    width: 150px;
+    height: 30px; 
+    font-size: 15px;
+    }
+    /**NORMATIVAS**/ /**FINAL**/
+
+    /**OPINIONES**/
+    .opiniones .box-opiniones .card-opinion .opinion-text h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .opiniones .box-opiniones .card-opinion .opinion-text p{
+        font-size: 15px;
+        font-weight: 10px;
+        line-height: 20px;
+    }
+
+    /**FOOTER**/
+    .footer .footer-content .footer-title h2{
+        width: 100%;
+        font-size: 26px;
+    }
+    .footer .footer-content .formulario-content #formulario .mensaje-form{
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width: 590px) {
+    /**IMAGENES HEADER**/
+    .img-header .bienvenido h1{
+        font-size: 30px;
+    }
+    .img-header .bienvenido > button{
+        width: 300px;
+        font-size: 20px;
+    }
+    .acerca-de .info-container h1{
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--black);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .acerca-de .info-container p{
+        text-align: center;
+        font-size: 13px;
+        color: var(--black);
+        line-height: 35px;
+        margin: 10px 0px;
+    }
+    /**GALERIA**/
+    .our-projects .container-project .project-title{
+        padding: 5px;
+    }
+    .our-projects .container-project .project-title h2{
+        font-size: 30px;
+        color: var(--green);
+        font-weight: normal;
+    }
+    .our-projects .container-project.project-img img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    /**NORMATIVAS**/ /**INICIO**/
+    .inf-normativas .gen button {
+        width: 120px;
+        height: 30px; 
+        font-size: 10px;
+    }
+    .inf-normativas .dpa button {
+        width: 120px;
+        height: 30px; 
+        font-size: 10px;
+    }
+    .inf-normativas .ips button {
+        width: 120px;
+        height: 30px; 
+        font-size: 10px;
+    }
+    .inf-normativas .sda button {
+        width: 120px;
+        height: 30px; 
+        font-size: 10px;
+    }
+    /**NORMATIVAS**/ /**FINAL**/
+
+    /**OPINIONES**/
+    .opiniones .opiniones-title h2{
+        font-size: 35px;
+    }
+    .opiniones .box-opiniones .card-opinion .opinion-text h4{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .opiniones .box-opiniones .card-opinion .opinion-text p{
+        font-size: 13px;
+        font-weight: 10px;
+        line-height: 16px;
+    }
+
+    /**FOOTER**/
+    .footer .footer-content .footer-title h2{
+        width: 100%;
+        font-size: 26px;
+    }
+    .footer .footer-content .formulario-content #formulario .mensaje-form{
+        font-size: 10px;
+    }
+    .footer .footer-content .foorter-text p{
+        font-size: 18px;
+    }
+
+}

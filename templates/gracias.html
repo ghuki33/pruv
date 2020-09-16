@@ -1,0 +1,41 @@
+{% load static %}
+{% csrf_token %}
+{% block gracias %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+
+        <nav class="menu">
+            <div class="logo-box">
+                <h1><a href="#">ANDINOSRP</a></h1>
+                <span class="btn-menu"><i class="fas fa-bars"></i></span>
+            </div>
+            <div class="list-container">
+                <ul class="lists">
+                    <li><a href="{% url 'index' %}" class="activo">INICIO</a></li>
+                    <li><a href="https://invite.gg/andinosrp">DISCORD</a></li>
+                    <li><a href="https://www.facebook.com/andinosrp">FACEBOOK</a></li>
+                    <li><a href="https://www.paypal.com/paypalme/andinosrp">DONACIONES</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--IMAGENES HEADER-->
+        <div class="img-header">
+            <div class="bienvenido">
+                <h1>!MUCHAS GRACIAS!</h1>
+                <hr>
+                <p>NOS AYUDAS A CRECER</p>
+            </div>
+        </div>
+    </header>
+</html>
+{% endblock gracias %}

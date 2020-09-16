@@ -1,0 +1,762 @@
+<!--PROGRAMADO POR GHUKI33-->
+<!--COLOMBIA-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>ANDINOS ROLEPLAY | INICIO </title>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UAV-Compatible" content="ie=edge">
+        <meta name="description" content="Sitio Web Oficial de Andinos Roleplay">
+        <meta name="author" content="Ghuki33 - Fundador de AndinosRP">
+
+        <!--ESTILOS-->
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!--SUBIR-->
+        <div class="subir">
+            <span><i class="fas fa-arrow-circle-up"></i></span>
+        </div>
+        <!--NAVEGAR-->
+        <header id="header">
+
+            <nav class="menu">
+                <div class="logo-box">
+                    <h1><a href="#">ANDINOSRP</a></h1>
+                    <span class="btn-menu"><i class="fas fa-bars"></i></span>
+                </div>
+                <div class="list-container">
+                    <ul class="lists">
+                        <li><a href="#" class="activo">INICIO</a></li>
+                        <li><a href="https://invite.gg/andinosrp">DISCORD</a></li>
+                        <li><a href="https://www.facebook.com/andinosrp">FACEBOOK</a></li>
+                        <li><a href="https://www.paypal.com/paypalme/andinosrp">DONACIONES</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--IMAGENES HEADER-->
+            <div class="img-header">
+                <div class="bienvenido">
+                    <h1>BIENVENIDOS A ANDINOS ROLEPLAY</h1>
+                    <hr>
+                    <p>Servidor de Roleplay serio para GTA V - FiveM</p>
+                    <button id="abajo">ACERCA DE NOSOTROS</button>
+                </div>
+            </div>
+
+            <div class="skew-abajo"></div>
+        </header>
+
+
+        <main>
+
+            <!--ACERCA DE ANDINOS-->
+            <section class="acerca-de">
+                <div class="info-container">
+                    <h1>Acerca de ANDINOSRP</h1>
+                    <p>Les presentamos Andinos Roleplay, los invitamos a hacer parte de este Servidor de Roleplay serio. Abrimos recientemente  y queremos que disfrutes de la mejor experiencias con Scripts propios y mapeos personalizados que te sorprenderán. Contamos con fabelas, autos reales, Mafias y Bandas, diversidad de trabajos para poder disfrutar del rol. En Andinos buscamos aquellas experiencias que te harán sentir como si no estuvieras en cuarentena ;). Así que vívelo y haz parte de Andinos RP. Hecha para toda la comunidad Latina. Se requieren personas para ser parte del cuerpo de  DPA, IPS y SDA</p>
+
+                    <div class="about-gallery">
+                        <img src="{% static 'img/banner.png' %}" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="inf-normativas">
+                <div class="gen"><button>NORMATIVA GENERAL</button></div>
+                <div class="dpa"><button>NORMATIVA DPA</button></div>
+                <div class="ips"><button>NORMATIVA IPS</button></div>
+                <div class="sda"><button>NORMATIVA SDA</button></div>
+            </section>
+            <!--NORMATIVA GENERAL-->
+            <section class="generales">
+                <div class="degbackground"></div>
+                <div class="ejeZgenerales"></div>
+                <div class="containergen">
+                    <div class="title">
+                        <h2>NORMATIVA GENERAL</h2>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Glosario de Términos</h3>
+                        <hr>
+                    </div>
+                    <!--CONCEPTOS BASICOS DE ROL-->
+                    <div class="contenido">
+                        <p>In Character (IC):Es todo aquello que ocurre con nuestro personaje o en el entorno de la ciudad donde se encuentra, dentro del servidor de juego.</p>
+                        <hr>                        
+                        <p>Out of Character (OOC): Todas las acciones que ocurren, se hablan o realizan de forma ajena a nuestro personaje o entorno de la ciudad, y por tanto, fuera del juego.</p>
+                        <hr>
+                        <p>Meta Gaming (MG): El MG se produce cuando se usa cualquier tipo de información obtenida por medio OOC y , usarla luego en IC, sea de forma intencionada o por error para obtener beneficio. Está prohibido y conlleva una sanción.</p>
+                        <hr>
+                        <p>Power Gaming (PG): Es cualquier cosa que hagamos con nuestro personaje en rol que en la vida real sería imposible hacer. Realizar esto conlleva una sanción.</p>
+                        <hr>
+                        <p>Bunny Jump (BJ): Es el uso excesivo del salto para llegar más rápido a un lugar. Está prohibido y conlleva sanción.</p>
+                        <hr>
+                        <p>Player Kill (PK): Ocurre cuando tu personaje muere</p>
+                        <p>PK Parcial: Ocurre cuando no eres reanimado por un IPS y pierdes memoria de las acciones que acabas de realizar.</p>
+                        <p>PK Total: Pérdida total de la memoria de tu personaje, pero sin perder tus posesiones (casas, autos, dinero).</p>
+                        <hr>
+                        <p>Death Match (DM): Es matar a otra persona sin razón o sin rol previo. Está prohibido y conlleva sanción</p>
+                        <hr>
+                        <p>Revenge Kill (RK): Matar a una persona sin rol, solo porque él te haya matado previamente. </p>
+                        <hr>
+                        <p>Vehicle DeathMatch (VDM): Matar a una persona sin rol previo usando como arma un vehículo</p>
+                        <hr>
+                        <p>Character Kill(CK): Muerte total de tu personaje. No se podrá volver a usar el mismo personaje con toda las pérdidas que esto conlleva (bienes y propiedades materiales, amistades de la ciudad, etc).</p>
+                        <p>Deberás crear un nuevo personaje desde cero. Al recibir un CK, no podrás volver a crearte un personaje con el mismo nombre y características que tenía el anterior, tendrá que ser totalmente diferente en todos los aspectos. Todas las clases de CK deberán ser previamente aprobados por un miembro del cuerpo administrativo con un rango superior a Moderador de Staff.</p>
+                        <p>CK Administrativo:</p>
+                        <p>-Se realiza por el uso excesivo de bugs o por incumplir las normas de la comunidad.</p>
+                        <p>-Otro motivo por el cual se te puede realizar este tipo de CK es por el realizar roles corruptos dentro de cualquier facción sin una previa aprobación de los Fundadores o Administradores del juegos.</p>
+                        <p>CK Mafia/Banda:</p>
+                        <p>-Se realizará un CK de la mafia por tener información comprometedora u otro motivo que implique a esta.</p>
+                        <p>-Para realizar un CK a un miembro de otra mafia, debe solicitarse al tener cautivo o como rehén a un miembro de esa otra mafia tras un rol previo. Este se realizará cuando el jugador no quiere revelar ninguna clase de información que pueda llegar a comprometer a su mafia (Esta en su derecho de preferir la muerte).</p>
+                        <p>-Al descubrirse traición por parte de un miembro de la mafia y se tengan pruebas in-game de esto, será aprobada su ejecución.</p>
+                        <p>CK Policial:</p>
+                        <p>-Se realizará cuando el jugador sea sentenciado a cadena perpetua.</p>
+                        <p>-Se realizará a serle incautado un civil una cantidad de armas/drogas por encima del máximo permitido por facción (Solo civil/mafia/banda).(Especificado en el código penal)</p>
+                        <p>-Abandono del cuerpo policial si se es un rango de Oficial o superior.</p>
+                        <p>-Tener un historial criminal extenso en el cual se le considere un peligro para los demás ciudadanos.</p>
+                        <hr>
+                        <p>ROL DE ENTORNO</p>
+                        <p>Recuerden que es un servidor de Rol y estamos en un ciudad en la cual está rodeada de cámaras de vigilancia y de ciudadanos (NPC´s) por eso hay que actuar acorde al entorno de una ciudad, cada vez que hagamos algo ilegal incluso salir de una zona de droga o de venta de armas, lo mismo si venden droga o si van a cometer un robo tienen que mandar un /entorno con el mensaje de lo que están haciendo, sea quien sea, de lo contrario será penalizado con un BAN recuerden que la ley es para TODOS.</p>
+                        <hr>
+                        <p>/ME: Se utiliza para expresar cualquier tipo de acción que nuestro personaje no pueda realizar, porque no se puede expresar por palabras o simplemente no puede realizar. Ejemplo: /me Saca la cartera, /me Escupe en el suelo.</p>
+                        <hr>
+                        <p>/DO:</p>
+                        <p>Se utiliza para expresar un pensamiento, un olor, una duda o para tomar decisiones que puedan llevar un curso dentro del rol. Estos se expresan en tercera persona y hace referencia a nuestro subconsciente, este lo utilizamos mayormente cuando nos encontramos en un estado de inconsciencia en el cual no podemos realizar movimientos ni emitir un sonido (Rol), utilizamos el /do para expresar las heridas que tendríamos y que tan grave seria, con esta información el cuerpo médico podrá proceder con el tratamiento más adecuado depende de la situación.</p>
+                        <p>EJEMPLO:</p>
+                        <p>-Se vería a una mujer con máscara de oso y vestimenta de color negro junto con un hombre con máscara de muerte y vestido de negro entrar a una tienda con personas más apuntándole.</p>
+                        <p>-Se vería a un grupo de personas salir de una zona con un montón de armas con vestimenta blanco y sombreros de vaquero en una camioneta negra con llantas todo terreno hacia Paleto Bay.</p>
+                        <p>-Se vería a un grupo de personas salir con un montón de bolsas sospechosas en una camioneta negra con acabado morado hacia la ciudad.</p>
+                        <p>-Se vería a una persona apuntándole a otra para que se suba al coche va con vestimenta roja y mascara de diablo.</p>
+                        <p>-Se vería a un hombre de negro forzar un coche y llevárselo en camino al garaje central.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h4>Reglas Generales</h4>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>1. Valora tu vida</p>
+                        <p>En un conflicto donde tu vida se vea en peligro debes de tener en cuenta como reaccionarias en la vida real por temor a perderla y siempre teniendo en cuenta la historia de tu personaje y como reaccionaria en cada situación, por normativa se permite que en caso de inferioridad numérica 1 vs 3 y con igualdad o superioridad de equipamiento/armas se contraataque en respuesta a los objetivos. Excepto cuando un admin externo al rol lo interrumpe</p>
+                        <p>2. En ningún caso se saldrá de rol, ni hablando OOC, ni evadiendolo, ni cortándolo por juicio propio porque no te parezca un rol justo. Ni siquiera cuando la persona se esté saltando la normativa. Salir de rol conlleva una sanción grave.</p>
+                        <p>3. Antes de presentar cualquier clase de reporte o pedir algún tipo de devolución, deberá especificarse el uso de evidencias visuales para este, en el caso contrario, no se podrá tomar ningún tipo de decisión de una manera objetiva, por ende no se penalizará ninguna acción o se hara devolucion de  cualquier clase de objeto. En el caso de las devoluciones si se realizaran siempre y cuando estas sean por factores externos, en estos casos se  necesita sacar captura del inventario y explicar de manera coherente lo sucedido, en el caso de haber incoherencias o se descubra algún tipo de alteración en las imágenes para obtener algún beneficio, se llegara a consecuencias severas.</p>
+                        <p>4. Está completamente prohibido evadir un rol ingresando a zona segura.</p>
+                        <p>5. Está prohibido interrumpir rol ajeno.</p>
+                        <p>6. Está totalmente prohibido un nombre y personaje que posea un nombre ofensivo o irreal, deben ser nombres contitucionales o que no puedan ser considerados como un insulto. Tambien esta prohibido el uso de nombres de personas famosas. Ejemplo: Elon Musk.</p>
+                        <p>7. Está prohibido iniciar roles agresivos (puñetazos, insultos, matar, entre otros) en los alrededores o en las zonas seguras. Esta norma se obvia cuando ya hay un rol previo.</p>
+                        <p>8. Nunca puede haber un rehén falso o acordado de fingir que es rehén, tampoco un npc cuenta como rehén.</p>
+                        <p>9. Estando en coma o muerto, está prohibido hablar por radio.</p>
+                        <p>10. Está prohibido guardar tu vehículo en el garaje para coger otro en medio de una persecución.</p>
+                        <p>11. No podrás usar un helicóptero o avión si no tienes licencia, será sancionado con una expulsión temporal del servidor, a excepción de que seas autorizado por alguno del cuerpo administrativo a partir del rango Sub-Director Ejecutivo.</p>
+                        <p>12. El equipo ejecutivo solo te podrá reanimar en caso de bug o de anti-rol.</p>
+                        <p>13. No se podrá rolear que posees un chip localizador a no ser que seas policía, periodista o miembro de una mafia.</p>
+                        <p>14.El realizar una conducción irreal dentro de la ciudad como el conducir a más de 200 km/h en el centro de la ciudad, colisionando con todo a su paso sin rolearlo, será sancionado.</p>
+                        <p>15. Está prohibido usar el chat para trolear, spamear y derivados.</p>
+                        <p>16. Si estás en un rol y se te crashea tendrás que seguir el rol si la otra persona afectada así lo decide. Se deberá recuperar la misma situación y posición que se quedó.</p>
+                        <p>17. Si el servidor se cae o se reinicia. No se recuperará el rol a no ser que uno de los dos lados esté de acuerdo (quedan exentos de esta norma los reinicios avisados).</p>
+                        <p>18. Un sujeto al que se le hayan cortado comunicación, no podrá comunicarse por la radio. Al igual que una persona que se encuentre esposada.</p>
+                        <p>19. Los del personal ejecutivo también podremos ejercer rol como cualquier cuidadano, por ende, actua como tal, también cometemos errores.</p>
+                        <p>20. En ningún momento podrás coger un vehículo de alguna facción como: DPA, IPS, SDA siendo civil. Será motivo de sanción.</p>
+                        <p>21. Los trabajos se deberán de realizar con el vehículo y ropa correspondiente. Llevar el camión de basura sin la ropa correspondiente y dejar tirados los vehículos de trabajo serán motivos de sanción.</p>
+                        <p>22. Queda totalmente prohibido forzar roles. El hecho de ir a comisaría a provocar con tal de entrar en una persecución o simplemente hacer burla se sancionará como PG.</p>
+                        <p>23. Las faltas de respeto a cualquier miembro de la comunidad OOC acarreará sanción administrativa. Se pide un poco de sentido común y el uso moderado del lenguaje ofensivo dentro del rol IC, si la situación lo pide pueden usarse, pero siempre sin pasarse, sin insultar todo el rato. No se permitirá las faltas de respeto a los dos géneros en OOC ni IC ni sobrepasarse en un rol cuando se use de rehén.</p>
+                        <p>24. Se puede robar un vehículo de NPC siempre y cuando se ponga su respectivo /entorno, el robar vehículos de NPC sin /entorno será sancionable.</p>
+                        <p>25. Queda prohibido hacer llamadas falsas a todos los servicios y siempre debe escribirse el motivo de la llamada, las llamadas sin texto podrán ser ignoradas.</p>
+                        <p>26. No se podrá llamar a un IPS cuando hay un rol agresivo en curso como un tiroteo, deberá esperarse a que finalice el rol para poder solicitar sus servicios.</p>
+                        <p>27. Queda prohibido hacer llamadas falsas a todos los servicios y siempre debe escribirse el motivo de la llamada, las llamadas sin texto podrán ser ignoradas.</p>
+                        <p>28. Esta prohibido hacer la llamada a los IPS via Twitter si estas inconciente, ya que será considerado como PG y podrá ser ignorada.</p>
+                        <p>29. La falta de respeto a un IPS será considerada como una falta grave de respeto y este podría rehusarse a revivirte.</p>
+                        <p>30. Está prohibido por normas del servidor cualquier tipo de violación o amputación de miembros hacia cualquier jugador (Este tipo de rol deberá ser pactado y aceptado por ambas partes).</p>
+                        <p>31. En el juego siempre tendrás que actuar como tu personaje, hablar OOC mediante el chat de voz está totalmente prohibido y es motivo de sanción a no ser que un miembro del cuerpo ejecutivo te de permiso de hacerlo.</p>
+                        <p>32. Cuando una fiesta o evento sea organizado previamente no se podrá realizar un secuestro, robar ni matar a nadie en dicho evento.</p>
+                        <p>33. Para empezar un rol agresivo, debes estar fuera del vehículo y apuntarle con el arma a la persona del otro vehículo o de la calle.</p>
+                        <p>34. Cuando vayas a realizar una postulación a banda o mafia, no podrás pertenecer a ninguna otra (DPA, IPS, SDA).</p>
+                        <p>35. Los chalecos solo podrán usarse para robos mayores y para las actividades entre bandas.</p>
+                        <p>36. Está permitido el doble trabajo siempre y cuando el rol lo permita. Ejemplo: Ser policía, pero en su día de descanso se fue de pesca con sus amigos.</p>
+                        <p>37. No se podrá hacer ningún tipo de acto ilícito en una zona segura ejemplo: venta de armas, venta de drogas, robos, secuestros, entre otros. No cumplir esta norma conlleva una sanción administrativa.</p>
+                        <p>38. Para secuestrar o robar a alguien que va en un coche, no se puede forzar el rol colisionando contra el.</p>
+                        <p>39. Todo el mundo tendrá que rolear que lleva el DNI encima en todas las ocasiones y no se podrá rolear un DNI falso.</p>
+                        <p>40. No se podrán spawnear objetos con el menú F6 sin un rol previo. Ejemplo: Para hacer una barrera con cajas deberás rolear que las cajas las sacas de una furgoneta/camión).</p>
+                        <p>41. No se puede escuchar a través de las paredes (las puertas que no se abren son consideradas paredes). Por lo tanto, solo podrás escuchar conversaciones a través de puertas que se puedan abrir (deberás estar detrás de ella). Se considerará PG y MG, por lo tanto, es una sanción grave.</p>
+                        <p>42. El mal uso del chat conlleva una sanción.</p>
+                        <p>43. El uso de herramientas de cualquiera trabajo legal, ya sea vehículo o arma, no se podrán utilizar con fines de rol agresivo.</p>
+                        <p>44. Cuando tus alquilas una casa, así veas a la gente dentro, tienes que rolear como que no los ves ni los escuchas ya que es tu casa personal. Si te invitan a alguna casa, entonces si podrás ver a los demás.</p>
+                        <p>45. Los coches vips (de donador), son intransferibles (no los puedes vender), será motivo de sanción grave si llega a pasar.</p>
+                        <p>46. Las esposas se te aflojan en x tiempo, si se te aflojan tienes que rolear que llevas las esposas puestas, sólo te las puedes quitar con ganzúas.</p>
+                        <p>47. Objetos montables: Todos los objetos tipo cajas con palé, tienen que transportarse en vehículo suficientemente grande como para poder llevarlo a una escena, tipo joyería, badulaque, etc. No se podrán llevar en coches normales ni patrullas Z excepto las vallas y los pinchos (máximo 4 pinchos).</p>
+                        <p>48. Es obligatorio da ID cuando alguien la pida y antes de reportar hablen primero entre los afectados en un canal de voz y, en el caso de no llegar a un acuerdo, acudir a soporte.</p>
+                        <p>49. Está totalmente prohibido sabotear el examen de manejo de otro jugador, esto podría conllevar sanciones.</p>
+                        <p>50. En la ciudad solo esta permitido iniciar rol con armas de bajo calibre (Pistolas), cualquier otro tipo de armamento será considerado PG. En las zonas calientes de obvia esta norma.</p>
+                        <p>51. Si es que la persona es sometida a un CK, en cualquiera de sus circunstancias, esta persona no podrá volver a tener un rol con el mismo Proyecto banda o Mafia hasta después de 2 días calendarios. Esto es para evitar los CKS instantáneos y volver al rol con toda la información previa.</p>
+                        <p>Está prohibido el CK Voluntario si el personaje se encuentra con: Multas o búsqueda de captura.</p>
+                        <p>52. Está prohibido iniciar un rol agresivo si no eres el que controla dicha zona, solo los que controlan la zona podrán iniciar roles agresivos en ella.</p>
+                        <p>53. Está prohibido forzar a un SDA a tunear los vehículos, acarreará sanciones graves.</p>
+                        <p>54. Nadie puede suplantar la identidad de un cargo público (por ejemplo, ponerte la ropa de un policía).</p>
+                        <p>55. Los IPS y SDA mientras estén de servicio no están obligados a denunciar cualquier acto delictivo y colaborar con la policía. Fuera de servicio pueden hacer lo que les plazca teniendo en cuenta las consecuencias.</p>
+                        <p>56. Si roleas al IPS que tienes una herida mortal, se considerará CK (perderás todas tus pertenencias).</p>
+                        <p>57. No se puede utilizar equipamiento de DPA o IPS estando fuera de servicio (a menos que sea el de mayor rango en dicha institución).</p>
+                        <p>58. No se podrá realizar llamadas con la intención de secuestrar a un taxista. Podrás robar a un taxista cuando este de servicio circulando con su vehículo y hallan otros 3 taxistas conectados.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h5>Zonas Seguras</h5>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-Garaje Central (UNA CUADRA A LA REDONDA).</p>
+                        <p>-Hospital (UNA CUADRA A LA REDONDA).</p>
+                        <p>-Comisaria (UNA CUADRA A LA REDONDA).</p>
+                        <p>-Cajeros. </p>
+                        <p>-Auto Escuela. (Solo en el interior)</p>
+                        <p>-Tiendas Armas. (Ammunation) (Solo en el interior)</p>
+                        <p>-Taller de SDA (UNA CUADRA A LA REDONDA).</p>
+                        <p>-Despacho del Alcalde (UNA CUADRA A LA REDONDA).</p>
+                        <p>-Puntos de trabajo.</p>
+                        <p>-Jurado.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h6>Zonas o Puntos Calientes (UNA CUADRA A LA REDONDA)</h6>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-Puntos de recolección y procesado de droga.</p>
+                        <p>-Zonas aledañas a un robo.</p>
+                        <p>-Zonas aledañas a un tiroteo.</p>
+                        <p>-Puntos de venta de droga.</p>
+                        <p>-Zonas controladas por mafias o bandas.</p>
+                        <p>-Jibaro.</p>
+                        <p>-Favelas.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h7>Secuestros</h7>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>Civiles: Se podrá secuestrar a un civil, siempre y cuando haya por lo menos 3 policías de servicio. Está prohibido asesinar al civil si éste colabora.</p>
+
+                        <p>DPA: Se podrá secuestrar a un oficial siempre y cuando hayan por lo menos 4 policías de servicio. Está prohibido asesinar al oficial si este colabora. Se obvia esta restricción en caso de ser un rol de CK por parte de una mafia.</p>
+               
+                        <p>IPS: Está prohibido el secuestro de un IPS.</p>
+                
+                        <p>SDA: Solo se podrá secuestrar a un SDA si este si este se encuentra en el taller, solo se permitirá si esta fuera del taller. Está estrictamente prohibido secuestrar a un SDA solo para que te repare un vehículo, pídelo como una persona civilizada, en el caso de hacerlo acarreará graves consecuencias.</p>
+            
+                        <p>Taxistas: Se podrá secuestrar con la misma normas de los civiles.</p>
+                  
+                        <p>Alcalde/Secretario de Gobierno: Para poder secuestrar al alcalde, siempre y cuando hayan por lo menos 6 policías de servicio. Es permitido hacerle CK al alcalde siempre y cuando este sea bien elaborado y lleve un buen rol previo detrás. Está prohibido asesinar al alcalde si este colabora. Cabe recalcar que no se podrá pedir parte del dinero público.(Rol)</p>
+                   
+                    </div>
+                    <div class="subtitle">
+                        <h8>Asaltos a la Cuidadania</h8>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>Civiles: Para hacer un robo a otro jugador, deberá de haber un mínimo de 1 policías de servicio. Está prohibido asesinarlo si éste colabora.</p>
+                     
+                        <p>DPA: Para realizar un robo a un Policía, deberá de haber +3 Policías de servicio. Se le puede robar todo a excepción de: la porra, el taser y la comida. Para robar a un policía estando muerto, deberá haber un rol de lo que estás haciendo (/me y /do).</p>
+                    
+                        <p>IPS: Está prohibido robarle a este si esta de servicio, si le encuentra a un civil, integrante de mafia o banda botiquines médicos, se les realizará un strike (Favor reportar este tipo de casos).</p>
+                        
+                        <p>SDA: Aplican las mismas reglas que los civiles, con la excepción de que deberá estar fuera del taller.</p>
+                       
+                        <p>Taxistas: Aplican las mismas normas que los civiles.</p>
+                      
+                    </div>
+                    <div class="subtitle">
+                        <h9>Reglas de Streams</h9>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>1. Debe tapar el mapa en caso de entrar a zonas ilegales como puntos de drogas, venta de drogas o sedes de mafias/bandas.</p>
+                        <p>2. En caso de un reporte o alguna reunión con el STAFF deberá silenciar la voz de su directo siempre.</p>
+                        <p>3. Únicamente se puede anunciar de un directo cuando se esté transmitiendo contenido referente al servidor.</p>
+                        
+                    </div>
+                    <div class="pie-normativa">
+                        <h3>ESTAS NORMATIVAS ESTÁN SUJETAS A CAMBIOS Y MODIFICACIONES, POR EL CUAL ESTAR AL PENDIENTE DE CUANDO SE ANUNCIEN ESTOS CAMBIOS. CABE RECALCAR QUE ES NECESARIO CONOCER ESTAS NORMAS PARA PODER INGRESAR A CUALQUIER FACCIÓN. ESPERAMOS DISFRUTES DE ANDINOS RP.</h3>
+                    </div>
+                </div>
+            </section>
+            <!--NORMATIVA DPA-->
+            <section class="ndpa">
+                <div class="ejeZdpa"></div>
+                <div class="containerdpa">
+                    <div class="title">
+                        <h2>NORMATIVA DPA</h2>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Requisitos</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-Mayor de 15 años OOC.</p>
+                        <p>-No tener antecedentes PENALES.</p>
+                        <p>-Cumplir un mínimo de 10 horas semanales.</p>
+                        <p>-Tener la licencia de armas (sacarlo si ya es Policía).</p>
+                        <p>-Conocer la normativa general, conocer los conceptos básicos de rol, conocer la normativa de robos y la normativa policial.</p>
+                        <p>-Superar el examen oral (vía Discord).</p>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Generales</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>1. Es obligatorio agregar el fichaje y entrar a la radio antes de entrar a servicio, en el caso de hacerlo conlleva consecuencias (Esto también aplica aunque seas el único en servicio).</p>
+                        <p>2. Está prohibido llevar roles corruptos si se es un rango menor a Cabo primero.</p>
+                        <p>3. Los roles corruptos deben ser aceptados por los administradores, en caso de llevar a cabo este rol sin permiso, se dará un CK inmediatamente sin derecho a apelaciones.</p>
+                        <p>4. Si se es un rango superior a Oficial, deberá realizarse un CK para poder abandonar el cuerpo, en el caso de ser un rango inferior solo se le aplicará un PK Total.</p>
+                        <p>5. No se puede abatir fuego si el individuo no presenta una amenaza para los civiles o el cuerpo policial (Como el que no se le haya visto un arma letal).</p>
+                        <p>6. Deberán leérsele los derechos al detenido antes de llegar a comisaría, en el caso de no ser leídos y el detenido apele a este derecho, se le deberán regresar toda clase de pertenencias y ser dejado en libertad pero podrá llevar reseña delictiva en la base de datos, mas no dar orden de captura.</p>
+                        <p>7. Está prohibido romper las negociaciones a menos que el atracador lo haga. Siempre se deberá buscar una manera de llegar a unas negaciones (Como sugerir una parte del botín menor al 50% para negociar).</p>
+                        <p>8. Está prohibido realizar cualquier clase de acto ilícito dentro y fuera de servicio, esto será considerado como traición y puede llevar CK dependiendo del rango (No cuentan las infracciones de tránsito, estas tras ser reiterativas podría llevar a un descenso del nivel del rango).</p>
+                        <p>9. La policía tiene que respetar las normas de la ciudad como cualquier otro ciudadano (semáforos, zonas peatonales, sentido del carril) salvo que vayamos a una emergencia.</p>
+                        <p>10. Está prohibido el abuso de autoridad, toda identificación o cacheo tiene que tener un motivo de peso y una investigación detrás, salvo en alerta NARANJA/ROJA.</p>
+                        <p>11. Está prohibido portar el arma reglamentaria fuera de servicio, sin ser rango Inspector o superior.</p>
+                        <p>12. Esta totalmente prohibido portar encima los objetos incautados de algún robo o detenido, tienen que depositarse en comisaría lo más rápido posible.</p>
+                        <p>13. Al tercer Strike policial o llamado de atención será expulsado del cuerpo. Si se es Oficial o superior se le aplicará un CK, en caso contrario un PK y olvidara todo lo correspondiente al cuerpo policial.</p>
+                        <p>14. El parking de comisaría es únicamente para vehículos DPA.</p>
+                        <p>15. Los únicos rangos que pueden portar indumentaria libre (siempre usando la lógica y con credenciales visibles) son el Sargento Mayor y el Sargento Primero.</p>
+                        <p>16. Queda totalmente prohibida las visitas al calabozo a menos que un Sargento Mayor o el Sargento Primero lo aprueben.</p>
+                        <p>17. Se deberá cachear al detenido antes de llegar a comisaría (usando el /me y /do).</p>
+                        <p>18. Está prohibido evadir rol entrando a zona segura.</p>
+                        <p>19. Está prohibido confiscar productos de primera necesidad (comida).</p>
+                        <p>20. Si es condenado por un delito menor, en caso de poseer armas con su respectiva licencia deberá devolverse una vez haya pasado su tiempo de condena.</p>
+                        <p>21. Está prohibida la no deionización al detenido cualquier clase de objeto que pueda conllevar un peligro para el cuerpo, para los demás detenidos o para su propia integridad física (va desde armas de fuego, armas blancas e incluyendo bidones de gasolina, dildos, entre otros).</p>
+                        <p>22. Está prohibido ejercer el rol de policía si se está fuera de servicio (se deberá considerar como un civil comun y corriente).</p>
+                        <p>23. Está prohibido hacer alianzas con grupos ilegales sin una previa aceptación de los Fundadores.</p>
+                        <p>24. Si el detenido pide atención médica deberá llamarse al cuerpo de la IPS y recibir la atención médica en presencia de un oficial.</p>
+                        <p>25. Si el detenido solicita alimento, se le deberá suministrar un mínimo de 4 panes y 2 botellas de agua.</p>
+                        <p>26. En caso de robos pequeños debe de haber 2 policías disponibles como mínimo y un máximo de 3 policías disponibles para un robo pequeño, en caso contraria deberá pedirse que cancelen el robo.</p>
+                        <p>27. En caso de robos medianos como mínimo deben de haber 5 y un máximo de 6 en servicio de lo contrario cancelar.</p>
+                        <p>28. En caso de robos grandes debe haber como mínimo debe de haber 7 policías disponibles y un máximo de 8 policías disponibles de lo contrario cancelar.</p>
+                        <p>29. En el caso de negociar rehenes y estos sean dejados en libertad, siempre deberá ser cacheado (utilizando el /me y /do) y solicitar su documentación para evitar que interfiera como tercero en el rol. En caso de hacerlo y ser capturado, la condena de los atracadores se duplicará ya que utilizaron un rehén previamente pactado.</p>
+                        <p>30. En una persecución si los delincuentes abren fuego las autoridades responderán de la misma manera “Clave Robber”.</p>
+                        <p>31. El vehículo es 100% su responsabilidad y al descender de él es hurtado tendrá que pagar de su salario.</p>
+                        <p>32. Acatar siempre las órdenes de sus superiores.</p>
+                        <p>33. Si se rompen negociaciones se dará 10 segundos para proceder a disparar en ambos bandos.</p>
+                        <p>34. Si usted entra a negociar en un robo todo lo que pase va a ser bajo su responsabilidad.</p>
+                        <p>35. Tener en cuenta que se puede identificar por rasgos como cara, huellas o vehículos en el atraco.</p>
+                        <p>36. Los niveles de alerta solo los podrá determinar el rango más alto en servicio (Debe haber un mínimo de 4 policías en servicio para determinar un nivel de alerta diferente a alerta verde).</p>
+                        <p>37. Está prohibido hacer patrullajes fuera de zonas seguras cuando se está solo.</p>
+                        <p>38. Es obligatorio siempre patrullar la ciudad en dúos. Lo cabos es preferible que lo hagan con un oficial de rango Inspector y superiores.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Ascensos DPA</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>Para ser promovido en la cuerpo se realizará una evaluación de su rendimiento y se harán los respectivos ascensos con un bono de reconocimiento por su labor.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Equipamiento Robos</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>Pequeños: Pistola 9mm y teaser con porra y linterna.</p>
+                        <p>Medianos: Pistola 9mm, SMG, chaleco antibalas 2, teaser, porra y linterna.</p>
+                        <p>Grandes: Pistola 9mm, Rifle de precisión, rifle de asalto, chaleco antibalas tipo 3, gas lacrimógeno, teaser, porra y linterna.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Rangos</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-Sargento Mayor.</p>
+                        <p>-Sargento Primero.</p>
+                        <p>-Inspector.</p>
+                        <p>-Oficial.</p>
+                        <p>-Cabo Primero.</p>
+                        <p>-Cabo Segundo.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Equipamiento Reglamentario</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-Taser.</p>
+                        <p>-Pistola.</p>
+                        <p>-Linterna.</p>
+                        <p>-Porra.</p>
+                        <p>-Comida y bebida.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Nivel de Alerta</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <h5>Alerta Verde:</h5><p>La ciudad está en completo orden, no se podra cachear a un sujeto sin un previo rol. (Se debe patrullar sin armas en mano).</p>
+                        <h6>Alerta Naranja:</h6><p>Todo ciudadano que se encuentre en zona caliente será arrestado de inmediato (ya que estaría en zona conflictiva), el andar con máscara en este tipo de alertas será considerado delito menor y se le impondrá una multa, si este se encuentra en zona caliente deberá ser arrestado. Está permitido cachear a cualquier sujeto que resulte sospechoso sin un rol previo.</p>
+                        <h7>Alerta Roja:</h7><p>Todo ciudadano que se encuentre en la calle será arrestado y la policía tendrá el poder de abrir fuego si la situación lo amerita. Se pedirá a todo ciudadano que no esté implicado en el suceso que vaya a su casa o una zona segura (máximo de un aviso).</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Claves DPA</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>Clave Robber: Abrir fuego contra el vehículo o algún objeto que ponga en riesgo la vida de los integrantes de los DPU o los ciudadanos.</p>
+                        <p>Clave PIB: Interceptar a un vehículo realizando golpes para desestabilizarlo (pasados más de 7 minutos de haber iniciado la persecución).</p>
+                        <p>Clave U: Colocar barreras de patrulla en medio de la persecución (también llamados obstáculos).</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Zonas Seguras</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-Las zonas seguras son aquellas zonas que no podremos realizar actos delictivos.</p>
+                        <p>-Las zonas seguras dejarán de ser seguras si hay un rol previo.</p>
+                        <p>-En zonas seguras y en las proximidades NO se harán roles agresivos.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Zonas Calientes</h3>´
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-Los puntos calientes son aquellas zonas donde podremos iniciar un rol agresivo (tiroteo extorsión. etc...) sin necesidad de haber un rol previo.</p>
+                        <p>-Las zonas circundantes a un Robo, la policía puede abrir fuego sin previo aviso.</p>
+                        <p>-No se pueden campear los puntos calientes.</p>
+                        <p>-Los policías podrán hacer redadas en puntos calientes (en este caso irán los SWATS).</p>
+                        <p>-En caso de las zonas de mafias o bandas los únicos que pueden empezar un rol agresivo son los propietarios de dicha zona (esto quiere decir que tú no puedes ir a la zona de una mafia o banda con el objetivo de iniciar un tiroteo). En este caso se obvia las normas de policía básicos.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Precedimientos</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>Controles rutinarios:</p>
+                        <p>Cuando se desee realizar un control rutinario a un civil, se seguirán los siguientes protocolos:</p>
+                        <p>-A pie: Los agentes identificarán y solicitarán al civil que se detenga. Se le informará el motivo de su detención (si así lo pregunta el civil) y se le pedirá su documentación. Antes de cachear a un civil, este debe de ser preguntado si porta algún objeto ilegal (armas, droga, ganzúas…).</p>
+                        <p>-En vehículo: Bajo ningún concepto está permitido colisionar con otro vehículo para el alto, Se pondrán las sirenas y se iniciará un seguimiento hasta que el sujeto detenga su vehículo, se le pedirá al civil que quite las llaves del contacto y baje de dicho vehículo, si el conductor acelera, se inicia una persecución.</p>
+                        <hr>
+                        <p>Sospechoso huyendo a pie:</p>
+                        <p>Cuando un civil se escape a pie sin haber disparado previamente, se le deberá informar en voz alta y clara que se detenga, si no se para nos veremos obligados a tasear al sujeto. Nunca se podrá disparar con un arma letal a no ser el sujeto porte un arma.</p>
+                        <hr>
+                        <p>Sospechoso huyendo en coche:</p>
+                        <p>Iniciaremos la persecución detrás del vehículo con una distancia de seguridad. Nada más empezar la persecución pediremos refuerzos, dicha ayuda deberá buscar el posible código 100. No se podrá dispara a las ruedas en ciudad hasta que el vehículo a perseguir abandone el casco urbano. Si la patrulla recibe fuego por parte de los fugitivos automáticamente la patrulla que los persigue podrá abrir fuego con su arma letal.</p>
+                        <hr>
+                        <p>Sospechoso huyendo en moto:</p>
+                        <p>Las motos son más complicadas que los coches ya que en cualquier acción puede poner en riesgo la vida del sospechoso, en un primer momento lo seguiremos y trataremos de cerrarle el paso para obligar su detención. Se avisará a otra patrulla para que venga con las Mary o deberán cogerlas para unirse a la persecución. A los sospechosos en moto se les podrá tasear siempre que estén parados o a baja velocidad.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Negociaciones</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>Para llevar a cabo la negociación de un atraco, será de forma que el atracador y el negociador deben de llegar a un acuerdo, Este sistema solo será utilizado si ambas partes están de acuerdo.</p>
+                        <p>Por cada exigencia aceptada por parte de la policía, deberá salir el rehén primero.</p>
+                        <hr>
+                        <p>Aclaración:</p>
+                        <hr>
+                        <p>No se podrá solicitar 2 cosas por rehén.</p>
+                        <p>Dentro de las exigencias pueden entrar:</p>
+                        <p>-Segundos (Máximo 2).</p>
+                        <p>-Clave Robert (Se activa cuando se pone en riesgo la vida de los ciudadanos).</p>
+                        <p>-Clave U (Se activa cuando se pone en riesgo la vida de los ciudadanos).</p>
+                        <p>-Clave PIB (Se activa cuando se pone en riesgo la vida de los ciudadanos).</p>
+                        <p>-Pinchos.</p>
+                        <p>-Barricadas.</p>
+                        <p>-Helicóptero</p>
+                        <p>-Que no se toque el vehículo.</p>
+                        <p>-Pase libre (pueden infringir las normas de tránsito).</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h3>Códigos de Radio</h3>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-10.00‌ ‌’Precaución’.‌</p>
+                        <p>-10.01 ‘En la zona’.</p>
+                        <p>-10.04‌ ‌’Mensaje‌ ‌Recibido‌’.</p>
+                        <p>-10.05‌ ‌’Negativo‌’.</p>
+                        <p>-10.06‌ ‌’Ocupado’.‌</p>
+                        <p>-10.07‌ ‘‌Fuera‌ ‌De‌ ‌Servicio’.‌</p>
+                        <p>-10.09‌ ‌’Repetir‌ ‌Comentario’.‌</p>
+                        <p>-10.15‌ ‌’Persona‌ ‌Enmascarada‌’.</p>
+                        <p>-10.20‌ ‌’Ubicación‌ ‌Actual’.‌</p>
+                        <p>-10.34‌ ‌’Solicitar Refuerzos’.</p>
+                        <p>-10.37 ‘Sospechoso’.</p>
+                        <p>-10.39 ‘Se dirige a patrullar’</p>
+                        <p>-10.50‌ ‌’La‌ ‌unidad‌ ‌ha‌ ‌sufrido‌ ‌un‌ ‌accidente‌’.</p>
+                        <p>-10.56‌ ‌’Sospechoso‌ ‌bajo‌ ‌efectos‌ ‌de‌ ‌alcohol‌ ‌o‌ ‌drogas’.‌</p>
+                        <p>-10.55‌ ‌’Falsa‌ ‌Alarma‌’.</p>
+                        <p>-10.88: ‘Todo el cuerpo al punto de reunión’.</p>
+                        <p>-10.90‌ ‌’Persona‌ ‌que‌ ‌quiere‌ ‌suicidarse’.‌</p>
+                        <p>-CÓDIGO‌ ‌1 ‌’Persecución‌’.</p>
+                        <p>-CÓDIGO‌ ‌2:‌ ‌Tiroteo‌.</p>
+                        <p>-CÓDIGO‌ ‌3 ‘Atraco‌’.</p>
+                        <p>-CÓDIGO‌ ‌4 ‌’Procesando‌ ‌Detenido‌’.</p>
+                        <p>-CÓDIGO 5 ‘Emboscada’.</p>
+                    </div>
+                </div>
+            </section>
+            <!--NORMATIVA IPS-->
+            <section class="nips">
+                <div class="ejeZips"></div>
+                <div class="containerips">
+                    <div class="title">
+                        <h1>NORMATIVA IPS</h1>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h2>Requisitos</h2>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-Leer la normativa General (Se harán preguntas al respecto), la normativa de Robos (Especifican algunas cosas de interés para el cuerpo médico) y la normativa de la IPS.</p>
+                        <p>-La edad mínima para pertenecer al cuerpo de la IPS es 14 años OOC.</p>
+                        <p>-Realizar un curso en la alcaldía o preguntar en los apartados correspondientes en el ayuntamiento (Discord) como realizar estas capacitaciones para una mejor atención médica (Opcional).</p>
+                        <p>-No tener delitos de sangre (Casos de asesinato).</p>
+                        <p>-Tener licencia de conducir.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h2>Sugerecia</h2>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-Consultar algunos de los medicamentos más usados en los casos descritos en el apartado de Costo de Tratamiento.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h2>Generales</h2>
+                    </div>
+                    <div class="contenido">
+                        <p>1. Todos los integrantes del cuerpo de la IPS, tendrán que permanecer en LA RADIO cada vez que están de servicio y deberán de salir de LA RADIO cuando salgan de servicio, cuando se encuentre a un IPS en servicio fuera de la radio se le hará un STRIKE, al completar 2 STRIKE se les bajara de rango, si está en el último rango será expulsado del cuerpo de IPS directamente. Cabe recalcar que lo mismo aplica para el fichaje que se pondrá en el apartado de Registro de la IPS.</p>
+                        <p>2. La IPS tiene permitido cobrar por sus servicios, los precios estarán a la vista de todos en el apartado de Costo por tratamiento. Está estrictamente prohibido cobrar por encima de ese monto total, aun así, está permitido recibir donaciones. En el caso de que se habiliten las facturas, estos costos por tratamiento se tendrán que poner por medio de facturas aunque cualquier donación irá directamente al bolsillo del personal médico encargado del tratamiento (cualquier rango).</p>
+                        <p>3. En el caso de habilitarse el cobro por medio de facturas, se les dará una comisión de trabajo a final de semana según el tiempo que hayan estado de servicio, entre mas tiempo, mas dinero sumado al sueldo neto. Para poder aplicar a esta comisión extra se deben tener como mínimo 4 horas semanales.</p>
+                        <p>4. Para no ser expulsado del cuerpo, debe ajustar un mínimo de 3 horas semanales.</p>
+                        <p>5. Está prohibido realizar actos ilícitos estando de servicio, si estas fuera de servicio, solo serás expulsado si eres descubierto In-Game.</p>
+                        <p>6. Si estas fuera de servicio, pierdes cualquier clase de inmunidad, serás un civil corriente.</p>
+                        <p>7. Está prohibido utilizar y llevar cualquier clase de material médico fuera de servicio.</p>
+                        <p>8. Está estrictamente prohibida la venta de Vendas y Botiquines, ya que las vendas posiblemente puedan ser compradas en las farmacias. Al que se le descubra vendiendo este tipo de material siendo parte del cuerpo, se le realizará un CK Administrativo.</p>
+                        <p>9. Está PROHIBIDO dar atención médica cuando hay un tiroteo esté en progreso, el IPS tendrá que esperar hasta que el conflicto termine y podrá acudir al lugar cuando se notifique en el chat que pueden acudir a la zona (recordando que primeramente se reanime a los oficiales y seguidamente a los asaltantes en dicho tiroteo si la policía no está totalmente abatida, de caso contrario no acudirá hasta que la zona este calmada), deberá realizarse el traslado de los pacientes al hospital para atender las heridas si la herida es muy grave.</p>
+                        <p>10. Es OBLIGATORIO el buen uso del /me y /do. Cualquier reporte de mal uso de este por parte de la comunidad (Superior a tres reportes) hacia un mismo integrante del cuerpo médico, causara expulsión.</p>
+                        <p>11. Está prohibido atender emergencias sin el vehículo de trabajo o en un vehículo personal y sin la vestimenta correspondiente.</p>
+                        <p>12. Está totalmente prohibido quedarse AFK estando en servicio.</p>
+                        <p>13. Se debe de valorar la vida en todo momento, SIEMPRE hay que continuar un rol e informar con /report si una persona no valora su vida. A pesar de la inmunidad que se nos otorga, debemos seguir un rol si así este cursa, en ese caso en que no valores tu vida asi seas IPS, quedará invalidada esta inmunidad. Ejemplo: </p>
+                        <p>Al llegar a un zona donde previamente hubo un tiroteo y toda la policía está abatida, uno de los asaltantes enmascarado te apunta y te amenaza con asesinarlo si no revives a sus compañeros. Caso siguiente lo que haces es retirarte haciendo caso omiso a sus advertencias, caso siguiente, el asaltante enmascarado procede a asesinarte. En este caso, tu como cuerpo IPS serás el que recibirá la sanción, ya que no has valorado tu vida y esta va por encima de la inmunidad que se les otorga.</p>
+                        <p>14. Cuando el IPS se salga de servicio se deberá guardar el material en el maletero del vehículo de IPS y meter el vehículo en el garaje de EMS para que se pierda dicho material. (en el caso de que no pueda guardarlo tirar en la zona donde se cambia la ropa recordar que es prohibido llevar material fuera de servicio).</p>
+                        <p>15. Está permitido el uso de atajos mentales (Macros) siempre y cuando sean usados en contexto de rol. Es decir, el no spamear todo de seguido para terminar el rol más rápido, se debe tener una pausa mínima para poder que el paciente y las demás personas puedan leerlo (Elogiaran tu rol). Se aconseja que esta pausa sea de un mínimo de 10 segundos.</p>
+                        <p>16. Cualquier caso de corrupción sin una previa aprobación del cuerpo administrativo, conlleva un CK.</p>
+                        <p>17. Está prohibido atender casos de reanimación que sean reportados vía twitter o chat anonimo (Si están muertos, no podrán twittear).</p>
+                        <p>18. Queda PROHIBIDO curarse con el doctor o en la camilla del hospital cuando hay IPS, si ves esta clase de casos, reportarlo.</p>
+                        <p>19. Cualquiera que rolee una herida mortal será considerado como CK, reportarlo.</p>
+                        <p>20. No se podrá revivir a un jugador que no responda a los respectivos tratamientos (/me-/do) en este caso, se considera como PK Parcial y no será reanimado.</p>
+                        <p>21. No se exigen conocimientos médicos, pero si algo de consulta para poder responder de la mejor manera. Si te hacen el rol de una cirugía con una complejidad alta, realizarla a deducción, no conlleva ninguna sanción el equivocarse y el no conocer.</p>
+                        <p>22. Está prohibida la posesión de cualquier clase de arma (Con o Sin licencia) mientras se está de servicio.</p>
+                        <p>23. Está prohibido utilizar toda la indumentaria y los vehículos del cuerpo médico fuera de servicio.</p>
+                        <p>24. Estando de servicio está totalmente prohibido realizar actividades ilegales, extorsión, asesinato, abuso de poder, tráfico o posesión de drogas, etc. Toda persona que sea sorprendida realizando actividades ilegales, será sancionado/expulsado de la IPS, o si es grave sancionado/expulsado administrativamente. </p>
+                        <p>25. No se puede conducir de forma temeraria sin circular con aviso prioritario, ya que podemos ser sancionados o condenados igual que los civiles. </p>
+                        <p>26. Entornos en la mitad del mar, no serán atendidos.</p>
+                        <p>27. Si se desea utilizar el helicóptero se tendrá que sacar la licencia de vuelo y tener aprobación de un superior.</p>
+                        <p>28. A pesar de que los policías tienen prioridad de tratamiento, se les cobrarán los tratamiento común y corriente, al igual a los pertenecientes a las demás facciones. Esta norma puede cambiar en el momento en que los directivos del hospital lo decidan y hagan tratos con las demás facciones, en ese caso serán informados.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h2>Prioridad de Reanimación y Tratamiento de Heridas</h2>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-IPS (Cuerpo Médico).</p>
+                        <p>-DPA (Cuerpo Policial).</p>
+                        <p>-SDA (Cuerpo Automotor).</p>
+                        <p>-Taxistas.</p>
+                        <p>-Civiles.</p>
+                        <p>-Delincuentes.</p>
+                        <hr>
+                        <p>Esto varía dependiendo del rol, si eres obligado a reanimar primero a los delincuentes, deberás acatar.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h2>Recomendaciones de tratamientos</h2>
+                        <hr>
+                    </div>
+                    <div class="recomendaciones">
+                        <p>/ME: Revisa el estado físico del paciente</p>
+                        <p>/DO: ¿Que tendría el paciente?</p>
+                        <p>Responde el paciente…</p>
+                        <p>/DO: ¿Necesitaría ser trasladado?</p>
+                        <p>Responde el paciente…</p>
+                        <p>Tratar sus heridas a criterio del médico encargado del tratamiento del paciente.</p>
+                        <p>/ME: Saca el botiquín de primeros auxilios.</p>
+                        <p>/E: suitcase (Con este comando se sacara un maletín que podría simularse como un botiquín de primeros auxilios).</p>
+                        <p>/ME: Del botiquín saca una jeringa, un estetoscopio, epinefrina, gasa y alcohol desinfectante. Procede a guardar el botiquín (Le das a la X).</p>
+                        <p>/ME: Con el estetoscopio, revisa su pulso en diferentes puntos específicos.</p>
+                        <p>/DO: ¿El paciente tendría pulso?</p>
+                        <p>En caso de poner que el pulso es muy leve deberá ser trasladado al hospital y usar desfibrilador</p>
+                        <p>Responde ‘Si tendria’ En caso de decir que no, será considerado CK.</p>
+                        <p>/ME: Procede a realizarle RCP.</p>
+                    </div>
+                </div>
+            </section>
+            <!--NORMATIVA SDA-->
+            <section class="nsda">
+                <div class="ejeZsda"></div>
+                <div class="containersda">
+                    <div class="title">
+                        <h1>NORMATIVA SDA</h1>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h2>Requisitos</h2>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>-La edad mínima para ser mecánico será de 14 años (Se pueden hacer excepciones).</p>
+                        <p>-Cumplir un mínimo de 4 horas semanales.</p>
+                        <p>-Conocer la normativa general, conocer los conceptos básicos de rol, conocer la normativa de mecánicos.</p>
+                        <p>-Superar el examen oral (vía Discord).</p>
+                    </div>
+                    <div class="subtitle">
+                        <h2>Generales</h2>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>1. No se harán tuneos gratis (Sanción Administrativa). En caso de extorsión o sometimiento, informar al cuerpo ejecutivo.</p>
+                        <p>2. Los clientes deberán respetar en todo momento a los mecánicos. De no ser así serán colocados en lista negra de manera indefinida.</p>
+                        <p>3. Antes de entrar a la sala de espera del taller deberán preguntar. (No pueden ingresar como si fuese su casa, hay gente trabajando).</p>
+                        <p>4. Si un mecánico le falta el respeto deberán comunicarlo al encargado del taller o al jefe.</p>
+                        <p>5. Si usted no paga un servicio en el plazo de la factura será denunciado y puesto en lista negra de manera indefinida.</p>
+                        <p>6. Para ingresar a las instalaciones no podrán tener nada que les tape la cara. Esto es por seguridad de todos los que estén dentro del mismo.</p>
+                        <p>7. Al realizar una modificación deberán presentar documentación para corroborar la pertenencia del vehículo. De no ser así, la modificación no se realizará o el vehículo no sale del taller hasta que lo retire un oficial del DPA. Esto es por seguridad.</p>
+                        <p>8. Deberán recordar que DPA y IPS tienen prioridad de llamado.</p>
+                        <p>9. Si un mecánico responde su llamado, no seguir insistiendo. De lo contrario se cancela el llamado.</p>
+                        <p>10. No serán atendidos los llamados vía OOC.</p>
+                        <p>11. Los clientes deberán presentar los papeles del vehículo y su documento de identidad (DNI) a la hora de solicitar un servicio de reparación o remolque de vehículos. Esto es por seguridad.</p>
+                        <p>12. (Para rolear los papeles se deberán presentar por /do. Tengan en cuenta que no pueden mentir con respecto a eso).</p>
+                        <p>13. Los mecánicos deben hacer un mínimo de 4 horas semanales para mantener la profesión, si no se puede llegar por cuestiones personales que impiden la conexión durante algunos días se debe avisar al jefe.</p>
+                        <p>14. El rango de ayudante durará una semana máximo, si el jefe decide que se realizó un buen trabajo, será ascendido a mecánico y a partir de ahí se asciende por experiencia y cantidad de tuneos.</p>
+                        <p>15. El uso del mono de trabajo es totalmente obligatorio. Este variará dependiendo de quién este de jefe en dicho taller. Ellos decidirán la ropa viable para cada taller. Se pueden llevar accesorios los identifique si están conformes.</p>
+                        <p>16. Estar en servicio implica estar en el taller o asistiendo en carretera. Todo aquel que esté de servicio y no esté cumpliendo con su trabajo será penalizado.</p>
+                        <p>17. A los coches de los civiles no se les puede poner armadura.</p>
+                        <p>18. Modificaciones a los vehículos de IPS, DPA y VIP/Donadores solo podrán ser realizados por el Director Automotor o Supervisor del Taller.</p>
+                        <p>19. Para las modificaciones se preguntará el modelo del vehículo. Se usará el Catalogo de Vehículos (Discord) con su respectivo precio.</p>
+                        <hr>
+                    </div>
+                    <div class="subtitle">
+                        <h2>Pagos Trabajadores</h2>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>Todos los domingos se dará una comisión a los trabajadores, la cual dependerá del tiempo de servicio prestado durante la semana. Para poder aplicar a esta comisión, deberá cumplir un mínimo de 5 horas semanales.</p>
+                    </div>
+                    <div class="subtitle">
+                        <h2>Kits de Reparación</h2>
+                        <hr>
+                    </div>
+                    <div class="contenido">
+                        <p>Se podrá vender los Kits de reparación con el 100% del dinero obtenido a través de la venta de Kits. (de forma individual) con un precio de …$ cada uno.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--ANDINOS GALERIA-->
+            <section class="our-projects">
+                <div class="deg-background"></div>
+                <div class="ejeZproject">
+                    <div class="container-project">
+                        <div class="project-title">
+                            <h2>GALERIA</h2>
+                            <hr>
+                        </div>
+
+                        <div class="project-img">
+                            <img src="{% static 'img/Screenshot_1.png' %}" alt="">
+                            <img src="{% static 'img/Screenshot_2.png' %}" alt="">
+                            <img src="{% static 'img/Screenshot_3.png' %}" alt="">
+                            <img src="{% static 'img/Screenshot_21.png' %}" alt="">
+                            <img src="{% static 'img/unknown.png' %}" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="skew-arriba"></div>
+                <div class="skew-abajo"></div>
+            </section>
+
+            <!--OPINIONES-->
+            <section class="opiniones">
+                <div class="opiniones-title">
+                    <h2>OPINIONES</h2>
+                    <hr>
+                </div>
+
+                <div class="box-opiniones">
+
+                    <div class="card-opinion">
+                        <div class="card-img">
+                            <img src="{% static 'img/desconocido.png' %}" alt="">
+                        </div>
+                        <div class="opinion-text">
+                            <h4>RolandZsickK | CIVIL</h4>
+                            <p>Andinos RP es un servidor con muy buena proyección. A pesar de que no tiene una comunidad numerosa, sus administradores constantemente buscan mejorar el servidor. Cuenta con una buena administración y gestión en cuanto a los empleos lo cual hace que haya una buena línea para rolear.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        {% block contacto %}
+        <footer class="footer">
+            <div class="deg-footer"></div>
+            <div class="ejeZfooter">
+                <div class="footer-content">
+                    <div class="footer-title">
+                        <h2>CONTACTANOS</h2>
+                        <hr>
+                    </div>
+                    <div class="formulario-content">
+                        <form id="formulario" action="php/enviar.php" method="post">
+                            <!--Formulario Nombre-->
+                            <label for="">Nombre:</label>
+                            <input type="text" id="user" name="user" placeholder="Ingresa tu nombre" required>
+                            <!--Formulario Correo-->
+                            <label for="">Correo Electrónico:</label>
+                            <input type="text" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                            <!--Formulario Mensaje-->
+                            <label for="">Cuentanos:</label>
+                            <textarea name="mensaje" id="mensaje" required></textarea>
+
+                            <div class="send"><button><a href="{% url 'gracias' %}">ENVIAR</a></button></div>
+                            <div class="mensaje-form">
+                                <p>Escribenos, te responderemos lo antes posible.</p>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="skew-arriba"></div>
+                    <div class="foorter-text">
+                        <p>&copy; ANDINOS RP 2020 | Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+        {% endblock contacto %}
+        <!--SCRIPTS-->
+        <script src="https://kit.fontawesome.com/5443397826.js" crossorigin="anonymous"></script>
+        <script src="{% static 'js/app.js' %}"></script>
+        <scrip src="{% static 'js/formulario.js' %}"></scrip>
+    </body>
+
+</html>
